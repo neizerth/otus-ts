@@ -24,6 +24,9 @@ interface UpdateAction {
 }
 
 function processPost(post: Post, action: Action) {
+
+  const x = action as never as number;
+  
   if (isUpdateAction(action)) {
     const newData = action.data;
   }
