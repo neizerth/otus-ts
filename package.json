@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "docs": "jsdoc -c jsdoc/jsdoc.json",
+    "docs:ts": "typedoc --options tsdoc/typedoc.json --tsconfig tsdoc/tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,11 @@
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "tslib": "^2.8.1",
+    "typedoc": "^0.28.5",
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsdoc": "^4.0.5"
   }
 }
